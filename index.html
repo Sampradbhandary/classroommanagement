@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classroom Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Classroom Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#notes">Share Notes</a></li>
+        <li><a href="#timetable">Timetable</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <h1>Manage Your Classroom</h1>
+        <p>An intuitive system for managing attendance, notes, and schedules.</p>
+      </div>
+    </section>
+
+    <!-- Attendance Section -->
+    <section id="attendance">
+      <h2>Mark Attendance</h2>
+      <p>Enter your details below to mark your attendance:</p>
+      <form id="attendance-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="roll" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes">
+      <h2>Share Notes</h2>
+      <p>Upload and share your notes with the class:</p>
+      <input type="file" id="file-input">
+      <button id="upload-btn">Upload</button>
+
+      <!-- New Section: Available Notes -->
+      <section id="available-notes">
+        <h2>Available Notes</h2>
+        <p>Click the button below to view the available notes shared by others:</p>
+        <a href="available-notes.html"><button id="view-notes-btn">View Available Notes</button></a>
+      </section>
+    </section>
+
+    <!-- Timetable Section -->
+    <section id="timetable">
+      <h2>Exam Timetable</h2>
+      <p>Stay updated with the latest exam schedules:</p>
+      <ul id="timetable-list">
+        <!-- Timetable items will be dynamically added here -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Classroom Management</p>
+  </footer>
+</body>
+</html>
